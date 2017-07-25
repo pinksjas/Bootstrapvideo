@@ -301,6 +301,10 @@
       if (path.ogv) {
         sources += '<source src="' + path.ogv + '.ogv" type="video/ogg">';
       }
+      
+      if (path.m4v) {
+        sources += '<source src="' + path.m4v + '.m4v" type="video/m4v">';
+      }
 
       $video = vide.$video = $('<video>' + sources + '</video>');
     } else {
@@ -308,6 +312,7 @@
         '<source src="' + path + '.mp4" type="video/mp4">' +
         '<source src="' + path + '.webm" type="video/webm">' +
         '<source src="' + path + '.ogv" type="video/ogg">' +
+        '<source src="' + path + '.m4v" type="video/m4v">' +
         '</video>');
     }
 
