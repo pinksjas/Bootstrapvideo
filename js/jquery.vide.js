@@ -267,6 +267,8 @@
           poster = path.webm;
         } else if (path.ogv) {
           poster = path.ogv;
+        } else if (path.m4v) {
+          poster = path.m4v;
         }
       }
     }
